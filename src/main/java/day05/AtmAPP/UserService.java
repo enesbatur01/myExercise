@@ -6,11 +6,11 @@ public class UserService {
 
     Validation Validation = new Validation();
     boolean isValidLogin = false;
-
+    static Scanner input ;
     public void login() {
 
             do { System.out.println("===BATUR BANK===\nHoş Geldiniz");
-                Scanner input = new Scanner(System.in);
+                 input = new Scanner(System.in);
 
             System.out.println("Lütfen 16 haneli kart numaranızı giriniz...");
             String cardLogin = input.nextLine().replaceAll(" ","");
